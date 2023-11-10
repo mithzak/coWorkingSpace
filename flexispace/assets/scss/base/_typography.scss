@@ -1,0 +1,133 @@
+/* ==== 
+ --------- (2.2) typography styles start ---------
+ ==== */
+
+// paragraph styles
+p,
+th,
+td,
+li,
+input,
+textarea,
+select,
+label,
+blockquote,
+span {
+  font-size: 18px;
+  line-height: 28px;
+  font-weight: 400;
+  color: $theme-color;
+  font-family: $theme-font;
+}
+
+.primary-text {
+  font-size: 24px;
+  line-height: 34px;
+}
+
+.secondary-text {
+  font-size: 16px;
+  line-height: 24px;
+}
+
+.tertiary-text {
+  font-size: 20px;
+  line-height: 30px;
+}
+
+// link styles
+a,
+button {
+  font-size: 16px;
+  line-height: 24px;
+  color: $theme-color;
+  font-weight: 500;
+  font-family: $theme-font;
+  cursor: pointer;
+
+  i {
+    transition: inherit;
+    color: inherit;
+  }
+
+  &:hover {
+    color: $primary-color;
+    i {
+      color: inherit;
+    }
+  }
+
+  &:visited,
+  &:active {
+    color: $primary-color;
+  }
+}
+
+// heading styles
+h1,
+.h1 {
+  font-size: 80px;
+  line-height: 1.4;
+}
+
+h2,
+.h2 {
+  font-size: 72px;
+  line-height: 1.6;
+}
+
+h3,
+.h3 {
+  font-size: 56px;
+  line-height: 1.6;
+}
+
+h4,
+.h4 {
+  font-size: 40px;
+  line-height: 1.6;
+}
+
+.h4-light {
+  font-size: 32px;
+  line-height: 42px;
+}
+
+h5,
+.h5 {
+  font-size: 24px;
+  line-height: 34px;
+}
+
+h6,
+.h6 {
+  font-size: 20px;
+  line-height: 24px;
+}
+
+h1,
+.h1,
+h2,
+.h2,
+h3,
+.h3,
+h4,
+.h4,
+h5,
+.h5,
+h6,
+.h6,
+p {
+  a,
+  span {
+    font-family: inherit;
+    font-size: inherit;
+    line-height: inherit;
+    font-weight: inherit;
+    color: inherit;
+  }
+}
+
+/* ==== 
+ --------- (2.2) typography styles end ---------
+ ==== */

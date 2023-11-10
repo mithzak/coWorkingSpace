@@ -1,0 +1,27 @@
+// (1.2) variables
+
+// fira sans google font source
+@import url("https://fonts.googleapis.com/css2?family=Fira+Sans:wght@100;200;300;400;500;600;700;800;900&display=swap");
+
+// font family
+$fira: "Fira Sans", sans-serif;
+
+// theme default
+$theme-font: $fira;
+$theme-bg: #ffffff;
+$theme-color: #000515;
+
+// colors
+$white: #ffffff;
+$black: #000000;
+$primary-color: #000515;
+$secondary-color: #fcc51d;
+
+// transitions
+$transition: all 0.4s ease-in-out;
+
+// box shadow
+$shadow: 0px 6px 30px rgba(0, 0, 0, 0.08);
+$black-color: #020202;
+$white-color: #ffffff;
+$yellow-color: #ffd900;

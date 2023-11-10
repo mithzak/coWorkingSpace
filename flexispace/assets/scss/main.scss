@@ -1,0 +1,106 @@
+/* ==============
+ ========= css documentation =========
+
+ * theme name: FlexiSpace
+ * version: 1.0
+ * description: Workplace Html5 Template
+ * author: PixelAxis
+ * author url: https://themeforest.net/user/pixelaxis
+
+ 01. abstracts
+     1.1 --> mixins
+     1.2 --> variables
+    
+ 02. base
+     2.1 --> reset
+     2.2 --> typography
+     2.3 --> global
+
+ 03. components
+     3.1 --> buttons
+     3.2 --> forms
+     3.3 --> preloader
+
+ 04. layout
+     4.1 --> header
+     4.2 --> banner
+     4.3 --> footer
+
+ 05. sections
+     5.01 --> latest space styles
+     5.02 --> case study styles
+     5.03 --> case details styles
+     5.04 --> blog styles
+     5.05 --> blog details styles
+     5.06 --> details banner styles
+     5.07 --> details meta styles
+     5.08 --> contact form styles
+     5.09 --> coming soon styles
+     5.10 --> follow slider styles
+     5.11 --> normal slider styles
+     5.12 --> case section styles
+     5.13 --> about overview styles
+     5.14 --> counter styles
+     5.15 --> team styles
+     5.16 --> testimonial styles
+     5.17 --> services styles
+     5.18 --> story styles
+     5.19 --> space styles
+     5.20 --> space details styles
+     5.21 --> single snippet styles
+     5.22 --> space gallery styles
+     5.23 --> related space styles
+     5.24 --> collaborate styles
+     5.25 --> featured styles
+     5.26 --> video styles
+     5.27 --> circle styles
+     5.28 --> arrow container styles
+     5.29 --> faq styles
+     5.30 --> faq sidebar styles
+     5.31 --> related two styles
+     5.32 --> latest two styles
+     5.33 --> snippet alter styles
+     5.34 --> featured space styles
+     5.35 --> create space styles
+     5.36 --> client styles
+     5.37 --> blog gap styles
+     5.38 --> blog alternate styles
+     5.39 --> coming wrapper styles
+     5.40 --> coming content styles
+     5.41 --> coming thumb styles
+     5.42 --> about overview single styles
+     5.43 --> section content styles
+     5.44 --> about overview single alternate styles
+     5.45 --> sticky styles
+     5.46 --> snippet regular styles
+
+
+ 06. responsive
+
+    =========================
+============== */
+
+// abstract styles
+@import "./abstracts/mixins";
+@import "./abstracts/variables";
+
+// base styles
+@import "./base/reset";
+@import "./base/typography";
+@import "./base/global";
+
+// component styles
+@import "./components/buttons";
+@import "./components/forms";
+@import "./components/preloader";
+
+// layout styles
+@import "./layout/header";
+@import "./layout/banner";
+@import "./layout/footer";
+
+// section styles
+@import "./sections/all-sections";
+
+// responsive styles
+@import "./responsive";

@@ -1,0 +1,240 @@
+/* ==== 
+ --------- (3.2) forms styles start ---------
+ ==== */
+
+// single input
+.single-input {
+  margin-bottom: 40px;
+  input,
+  textarea {
+    width: 100%;
+    padding: 0px 20px 20px 0px;
+    border-bottom: 1px solid rgba($color: #000515, $alpha: 0.1);
+    color: $theme-color;
+    &::placeholder {
+      color: $theme-color;
+    }
+    position: relative;
+    &::before {
+      content: "";
+      position: absolute;
+      left: 0px;
+      right: 0px;
+      bottom: 0px;
+      width: 100%;
+      height: 1px;
+      background-color: $theme-color;
+      transition: all 0.6s cubic-bezier(0.175, 0.885, 0.32, 1.275);
+    }
+  }
+}
+
+// single checkbox
+.single-checkbox {
+  display: flex;
+  align-items: center;
+  gap: 16px;
+  cursor: pointer;
+  input {
+    width: 24px;
+    height: 24px;
+    border-radius: 0px;
+    border: 1px solid #00001520;
+    appearance: none;
+    cursor: pointer;
+    transition: $transition;
+    position: relative;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    &::before {
+      content: "\f00c";
+      font-family: "Font Awesome 6 Free";
+      font-weight: 900;
+      font-size: 0px;
+      color: $theme-color;
+      transition: $transition;
+      position: absolute;
+    }
+    &:checked {
+      border: 1px solid #000015;
+      &::before {
+        font-size: 14px;
+      }
+    }
+  }
+
+  label {
+    cursor: pointer;
+  }
+}
+
+// single input group
+.single-input-group {
+  display: flex;
+  align-items: center;
+  gap: 24px;
+  row-gap: 40px;
+  margin-bottom: 40px;
+  .single-input {
+    margin-bottom: 0px;
+    width: calc(50% - 12px);
+  }
+}
+
+// email group
+.email-group {
+  display: flex;
+  align-items: center;
+  gap: 20px;
+  input {
+    flex-grow: 1;
+    padding: 16px;
+    background: rgba(0, 0, 0, 0.2);
+    &::placeholder {
+      color: $primary-color;
+    }
+  }
+
+  .btn {
+    padding: 18px 20px;
+    &::before {
+      background-color: $primary-color;
+    }
+    &:hover {
+      color: $white;
+    }
+  }
+}
+
+// search group
+.search-group {
+  display: flex;
+  align-items: center;
+  gap: 24px;
+  padding: 20px 20px 20px 0px;
+
+  background-color: rgba(255, 255, 255, 0.1);
+
+  input {
+    flex-grow: 1;
+    background-color: transparent;
+    padding: 16px;
+    color: $white;
+    &::placeholder {
+      color: $white;
+    }
+  }
+
+  button {
+    width: 64px;
+    height: 64px;
+    background-color: $secondary-color;
+    color: $primary-color;
+    display: inline-flex;
+    align-items: center;
+    justify-content: center;
+    transition: $transition;
+    i {
+      transition: none;
+    }
+    &:hover {
+      background-color: $white;
+      color: $primary-color;
+    }
+  }
+}
+
+// nice select
+.nice-select {
+  background-color: transparent;
+  border: 0px;
+  border-radius: 0px;
+  width: 100%;
+  padding: 16px 64px 16px 40px;
+  line-height: inherit;
+  height: inherit;
+  width: 100%;
+
+  .current {
+    font-weight: 400;
+    color: $white;
+  }
+
+  .list {
+    background-color: $primary-color;
+    z-index: 99;
+  }
+  ul {
+    width: 100%;
+    background-color: $primary-color;
+    li {
+      margin-top: 0px;
+    }
+    .option {
+      min-height: auto;
+      line-height: 100%;
+      padding: 20px;
+      border-bottom: 1px solid #414141;
+      border-radius: 0px;
+      color: $white;
+      &:hover {
+        background-color: $primary-color !important;
+        color: $secondary-color;
+      }
+      &:last-of-type {
+        border-bottom: none;
+      }
+    }
+    &:hover {
+      background-color: $primary-color;
+      .focus {
+        color: $secondary-color;
+      }
+    }
+    .selected,
+    .focus {
+      background-color: $primary-color !important;
+      color: $secondary-color;
+    }
+  }
+
+  &::after {
+    width: 8px;
+    height: 8px;
+    margin-top: -6px;
+    right: 30px;
+  }
+}
+
+// location
+.locationer {
+  &::before {
+    content: "\e0c8";
+    font-family: "Material Symbols Outlined";
+    position: absolute;
+    top: 50%;
+    left: 0px;
+    transform: translateY(-50%);
+    font-size: 24px;
+    font-weight: 200;
+  }
+}
+
+// size styles
+.size {
+  &::before {
+    content: "\e88a";
+    font-family: "Material Symbols Outlined";
+    position: absolute;
+    top: 50%;
+    left: 0px;
+    transform: translateY(-50%);
+    font-size: 24px;
+    font-weight: 200;
+  }
+}
+
+/* ==== 
+ --------- (3.2) forms styles end ---------
+ ==== */
